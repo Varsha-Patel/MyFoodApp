@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MyFoodApp": {
+    "FooDBoX": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-food-app",
+            "outputPath": "dist/foo-dbo-x",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "MyFoodApp:build:production"
+              "browserTarget": "FooDBoX:build:production"
             },
             "development": {
-              "browserTarget": "MyFoodApp:build:development"
+              "browserTarget": "FooDBoX:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "MyFoodApp:build"
+            "browserTarget": "FooDBoX:build"
           }
         },
         "test": {
@@ -97,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "68aa835d-6459-4a89-95ef-07f39b97369f"
   }
 }
